@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    display: flex;
+    
+
+}
+.body{
+  
+    background: url(main1.jpg) rgb(1 1 1 / 74%);
+    background-size: cover;
+    height: 100vh;
+    background-blend-mode: darken;
+
+}
+.logo{
+    font-size: 23px;
+    color: white;
+    padding: 17px 11px;
+    font-weight: 900;
+
+
+}
+
+.rightheader{
+    /* float: left; */
+    display: flex;
+    width: 40%;
+}
+.leftheader{
+    /* float: right; */
+    display: flex;
+    width: 60%;
+}
+.leftheader ul {
+    list-style-type: none;
+   
+    padding: 0;
+    overflow: hidden;
+    
+}
+.leftheader ul li{
+    float: left;
+    padding: 0px 18px;
+}
+.leftheader ul li a{
+    display: block;
+    color: rgb(8, 6, 6);
+    /* text-align: center; */
+    padding: 24px 17px;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+
+}
+.container{
+    margin: 172px 0px; 
+    /* padding: 101px; */
+    text-align: center;
+}
+.bigtext{
+    font-size: 55px;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+}
+.smalltext{
+    color: white;
+    font-size: 25px;
+    padding: 27px 0px;
+    font-weight: 600;
+}
+.btn{
+    padding: 12px 25px;
+    color: #ced3dc;
+    background: black;
+    border: solid 5px white;
+    border-radius: 30px;
+    font-size: 14px;
+}
+.webcontainer{
+    display: flex;
+    height: 300px;
+    background: yellow;
+    margin: 15px 0px;
+}
+.containerimage{
+    width: 50%;
+
+}
+.containerdata{
+    width: 50%;
+    background: wheat;
+}
+.headingtext{
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 0px;
+}
+.componentstext{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 22px 58px;
+}
+.data{
+    padding: 0px 58px;
+    font-size: 25px;
+}
