@@ -9,7 +9,7 @@
 }
 .body{
   
-    background: url(main1.jpg) rgb(1 1 1 / 74%);
+    background: url(img/main1.jpg) rgb(1 1 1 / 74%);
     background-size: cover;
     height: 100vh;
     background-blend-mode: darken;
