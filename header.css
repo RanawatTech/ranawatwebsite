@@ -4,6 +4,7 @@
 }
 .header{
     display: flex;
+   
     
 
 }
@@ -13,6 +14,8 @@
     background-size: cover;
     height: 100vh;
     background-blend-mode: darken;
+    background-position: center;
+    background-attachment: fixed;
 
 }
 .logo{
@@ -83,17 +86,20 @@
 }
 .webcontainer{
     display: flex;
-    height: 300px;
-    background: yellow;
-    margin: 15px 0px;
+    margin: 69px 65px;
 }
 .containerimage{
     width: 50%;
 
 }
+.containerimage img{
+    width: 70%;
+    margin: auto;
+    display: block;
+}
 .containerdata{
     width: 50%;
-    background: wheat;
+   
 }
 .headingtext{
     font-size: 48px;
@@ -102,11 +108,210 @@
     padding: 20px 0px;
 }
 .componentstext{
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 600;
-    padding: 22px 58px;
+    padding: 15px 58px;
 }
 .data{
     padding: 0px 58px;
-    font-size: 25px;
+    font-size: 23px;
+}
+.btn1{
+    padding: 12px 25px;
+    color: #ced3dc;
+    background: black;
+    border: solid 5px white;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+   display: block;
+   margin: auto;
+}
+.video{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(img/video-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+}
+    
+/* .video a{
+    font-size: 2.2rem;
+    color: #fff;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: var(--mount-meadow);
+    padding-left: 7px;
+    margin: 0 auto;
+} */
+/* .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.fas {
+    font-weight: 900;
+    font-size: 37px;
+    background: red;
+    padding: 19px 19px 19px 23px;
+    border-radius: 50%;
+    color: white;
+}
+.fas:hover{
+    /* cursor: pointer; */
+    color: black;
+}
+.videocontainer{
+    padding: 66px 366px;
+}
+.video h1{
+    font-size: 53px;
+    margin: 25px;
+    visibility: visible;
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
+.video h3{
+    visibility: visible;
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
+.memberpanal{
+    height: 500px;
+   
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.memberpanal h4{
+    font-size: 35px;
+
+}
+.box{
+    max-width: 100%;
+    height: 410px;
+   
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 168px;
+    
+
+}
+.subbox{
+    width: 30%;
+    height: 74%;
+  
+
+}
+.image{
+    width: 100%;
+   height: 100%;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+   border-radius: 25px;
+}
+.subbox h2{
+    margin-top: 15px;
+}
+
+.accordion{
+ background-color: rgb(172, 169, 169);
+ color: black;
+ cursor: pointer;
+ padding: 18px;
+ width: 90%;
+ text-align: left;
+ border: none;
+ outline: none;
+ transition: 0.4s;
+ 
+ margin: 5px 76px;
+ border-radius: 10px;
+ font-size: 22px;
+
+}
+.active, .accordion:hover{
+    background-color: rgb(175, 113, 113);
+}
+.panel{
+    padding: 0px 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    margin: 5px 76px;
+    font-size: 20px;
+    
+}
+.footer{
+    
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    text-align: center;
+}
+.footerpart{
+    display: flex;
+    height: 150px;
+
+}
+.footerright{
+    width: 50%;
+   
+    color: white;
+
+}
+.footerleft{
+    width: 50%;
+    
+    color: white;
+
+}
+.footerright span{
+    font-size: 61px;
+    font-weight: bolder;
+    padding-top: 20px;
+    display: block;
+}
+.socialicon{
+    font-size: 27px;
+}
+.socialicon a{
+    color: white;
+    padding: 0px 5px;
+}
+.copyright{
+    color: white;
+    padding-top: 15px;
+    font-size: 23px;
+}
+.footerleft span{
+    font-size: 36px;
+}
+.footerleft input{
+    font-size: 16px;
+    border-radius: 14px;
+    padding: 7px;
+    background: none;
+    border: 2px solid red;
+}
+.footerleft button{
+    font-size: 16px;
+    padding: 7px 10px;
+    border: 2px solid red;
+    background: no-repeat;
+    color: white;
+    border-radius: 12px;
+    margin-left: 5px;
+}
+.form{
+    margin: 16px;
+}
+.footerbox{
+margin-top: 15px;
 }
