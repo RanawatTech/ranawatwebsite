@@ -10,7 +10,7 @@
 }
 .body{
   
-    background: url(img/main1.jpg) rgb(1 1 1 / 74%);
+    background: url(../img/main1.jpg) rgb(1 1 1 / 74%);
     background-size: cover;
     height: 100vh;
     background-blend-mode: darken;
@@ -128,13 +128,14 @@
    margin: auto;
 }
 .video{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(img/video-bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../img/video-bg.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: #fff;
     text-align: center;
+    
 }
     
 /* .video a{
