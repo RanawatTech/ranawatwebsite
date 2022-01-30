@@ -92,8 +92,15 @@
     color: #ced3dc;
     background:transparent;
     border: solid 5px white;
+    text-transform: uppercase;
+    transition: var(--transition);
     border-radius: 30px;
     font-size: 14px;
+}
+.btn:hover{
+    background: var(--mount-meadow);
+    border-color: var(--mount-meadow);
+    box-shadow: 0 0 5px #F54D4D,0 0 25px #F54D4D, 0 0 50px #F54D4D, 0 0 200px #F54D4D;
 }
 .webcontainer{
     display: flex;
