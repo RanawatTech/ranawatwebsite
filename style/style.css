@@ -70,6 +70,10 @@
     color: white;
 
 }
+.leftheader ul li a:hover{
+   
+    color:#ced3dc;
+}
 .container{
     margin: 172px 0px; 
     /* padding: 101px; */
