@@ -39,14 +39,17 @@
 }
 
 .rightheader{
-    /* float: left; */
     display: flex;
-    width: 40%;
+    width: 32%;
+    align-items: center;
+    justify-content: center;
 }
 .leftheader{
     /* float: right; */
     display: flex;
     width: 60%;
+    justify-content: center;
+    align-items: center;
 }
 .leftheader ul {
     list-style-type: none;
@@ -68,7 +71,7 @@
     display: block;
     color: rgb(8, 6, 6);
     /* text-align: center; */
-    padding: 24px 17px;
+    padding: 24px 14px;
     text-decoration: none;
     font-weight: 500;
     font-size: 17px;
