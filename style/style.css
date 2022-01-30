@@ -91,10 +91,10 @@
     text-align: center;
 }
 .smalltext{
-    color: white;
-    font-size: 25px;
+    color: whitesmoke;
+    font-size: 20px;
     padding: 27px 0px;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 .btn{
     padding: 12px 25px;
