@@ -91,10 +91,10 @@
     padding: 12px 25px;
     color: #ced3dc;
     background:transparent;
-    border: solid 5px white;
     text-transform: uppercase;
     transition: var(--transition);
-    border-radius: 30px;
+    border: 3.5px solid #fff;
+    border-radius: 2rem;
     font-size: 14px;
 }
 .btn:hover{
