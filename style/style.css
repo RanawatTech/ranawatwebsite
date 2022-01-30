@@ -152,9 +152,10 @@
     background:transparent;
     border: solid 3.5px rgb(0, 0, 0);
     border-radius: 30px;
+    margin-top: 15px;
     font-size: 14px;
     font-weight: 600;
-    display: block;
+    display: none;
    margin: auto;
 }
 .video{
