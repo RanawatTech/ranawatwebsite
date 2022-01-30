@@ -53,6 +53,13 @@
    
     padding: 0;
     overflow: hidden;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
     
 }
 .leftheader ul li{
