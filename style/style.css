@@ -12,7 +12,6 @@
 }
 .header{
     display: flex;
-   
 }
 .body{
   
@@ -329,12 +328,12 @@
     border-radius: 14px;
     padding: 7px;
     background: none;
-    border: 2px solid red;
+    border: 2px solid #F54D4D;
 }
 .footerleft button{
     font-size: 16px;
     padding: 7px 10px;
-    border: 2px solid red;
+    border: 2px solid #F54D4D;
     background: no-repeat;
     color: white;
     border-radius: 12px;
