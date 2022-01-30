@@ -27,6 +27,9 @@
 
 
 }
+.logo span{
+    color: var(--mount-meadow);
+}
 
 .rightheader{
     /* float: left; */
