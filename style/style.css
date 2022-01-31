@@ -131,6 +131,7 @@
     width: 50%;
    
 }
+
 .headingtext{
     font-size: 48px;
     font-weight: 600;
@@ -328,7 +329,8 @@
 }
 .footerleft input{
     font-size: 16px;
-    border-radius: 14px;
+    border-radius: 102px;
+    padding-left: 18px;
     padding: 7px;
     background: none;
     border: 2px solid #F54D4D;
@@ -337,10 +339,13 @@
     font-size: 16px;
     padding: 7px 10px;
     border: 2px solid #F54D4D;
-    background: no-repeat;
+    background: #F54D4D;
     color: white;
     border-radius: 12px;
     margin-left: 5px;
+}
+.footer p{
+    font-size: 14px;
 }
 .form{
     margin: 16px;

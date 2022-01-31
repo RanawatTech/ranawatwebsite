@@ -210,47 +210,6 @@ section{
     background: var(--mount-meadow);
     height: 2.5px;
 }
-/* feature */
-.feature .container title{
-    align-content: center;
-}
-.feature .title{
-    text-align: left;
-}
-.feature-left img{
-    width: 80%;
-    margin: 0 auto;
-}
-.feature-right img{
-    width: 80%;
-    margin: 0 auto;
-    margin-left:  6rem;
-}
-.feature-right{
-    margin-top: 2rem;
-}
-.feature-left{
-    margin-top: 2rem;
-}
-.feature-item{
-    margin: 1.4rem 0;
-    display: flex;
-}
-.feature-item div h3{
-    margin-top: 0;
-    font-size: 1.4rem;
-    font-weight: 300;
-    opacity: 0.85;
-}
-.feature-item span{
-    font-size: 1.1rem;
-    color: #fff;
-    background: var(--mount-meadow);
-    align-self: flex-start;
-    padding: 0.4rem 0.7rem;
-    border-radius: 2px;
-    margin-right: 1.4rem;
-}
 /* video */
 .video{
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../assets/video-bg.jpg);
