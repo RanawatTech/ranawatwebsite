@@ -1,13 +1,13 @@
 
 body {
-	background-color: #4d6980;
+	background-color: #1c262e;
 	line-height: 1.4em;
 	padding: 0;
 	margin: 0;
 }
 
 #left {
-	background-color: #498cc4;
+	background-color: #210849;
 	line-height: 1em;
 }
 #left * {
@@ -271,7 +271,7 @@ td.header {
 }
 
 #notice {
-	background-color: #FFC300;
+	background-color: #008cff;
 	border-radius: 10px;
 	padding: 10px;
 	margin-bottom: 10px;
