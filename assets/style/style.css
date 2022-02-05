@@ -12,6 +12,7 @@
 }
 .header{
     display: flex;
+    justify-content: space-between;
 }
 .body{
   
@@ -26,7 +27,7 @@
 .logo{
     font-size: 25px;
     color: white;
-    padding: 17px 11px;
+    padding: 17px 70px;
     font-weight: 900;
 
 
@@ -37,7 +38,7 @@
 
 .rightheader{
     display: flex;
-    width: 32%;
+    /* width: 32%; */
     align-items: center;
     justify-content: center;
 }
@@ -62,7 +63,7 @@
 }
 .leftheader ul li{
     float: left;
-    padding: 0px 18px;
+    padding: 0px 10px;
 }
 .leftheader ul li a{
     display: block;
