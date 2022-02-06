@@ -80,6 +80,22 @@
    
     color:#ced3dc;
 }
+.line{
+    width: 33px;
+    background: white;
+    height: 4px;
+    margin: 5px 3px;
+    color: black;
+  
+
+}
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    top: 1%;
+    display: none;
+}
 .container{
     margin: 172px 0px; 
     /* padding: 101px; */
