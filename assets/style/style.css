@@ -67,13 +67,13 @@
 }
 .leftheader ul li a{
     display: block;
-    color: rgb(8, 6, 6);
+    color: var(--black);
     /* text-align: center; */
     padding: 24px 8px;
     text-decoration: none;
     font-weight: 500;
     font-size: 17px;
-    color: white;
+    color: var(--white-smoke);
 
 }
 .leftheader ul li a:hover{
@@ -82,10 +82,10 @@
 }
 .line{
     width: 33px;
-    background: white;
+    background: var(--white-smoke);
     height: 4px;
     margin: 5px 3px;
-    color: black;
+    color: var(--black);
   
 
 }
@@ -105,12 +105,12 @@
 }
 .bigtext{
     font-size: 55px;
-    color: white;
+    color: var(--white-smoke);
     font-weight: 600;
     text-align: center;
 }
 .smalltext{
-    color: whitesmoke;
+    color: var(--white-smoke);
     font-size: 20px;
     padding: 27px 0px;
     /* font-weight: 600; */
@@ -170,6 +170,7 @@
     background:transparent;
     border: solid 3.5px var(--black);
     border-radius: 30px;
+    transition: var(--transition);
     margin-top: 19px;
     font-size: 14px;
     font-weight: 600;
