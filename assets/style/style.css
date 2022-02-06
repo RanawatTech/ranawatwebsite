@@ -320,7 +320,7 @@
     padding: 0px 5px;
 }
 
-.socialicon a{
+.socialicon a:hover{
     color: var(--mount-meadow);
 }
 .copyright{
