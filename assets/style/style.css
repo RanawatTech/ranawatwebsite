@@ -319,6 +319,10 @@
     color: white;
     padding: 0px 5px;
 }
+
+.socialicon a{
+    color: var(--mount-meadow);
+}
 .copyright{
     color: white;
     padding-top: 15px;
