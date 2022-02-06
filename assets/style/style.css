@@ -166,9 +166,9 @@
 }
 .btn1{
     padding: 12px 25px;
-    color: #030303;
+    color: var(--black);
     background:transparent;
-    border: solid 3.5px rgb(0, 0, 0);
+    border: solid 3.5px var(--black);
     border-radius: 30px;
     margin-top: 19px;
     font-size: 14px;
