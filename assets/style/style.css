@@ -176,6 +176,19 @@
     display: block;
    margin: auto;
 }
+
+.btn1:hover{
+    padding: 12px 25px;
+    color: #ffffff;
+    background:var(--mount-meadow);
+    border: solid 3.5px var(--mount-meadow);
+    border-radius: 30px;
+    margin-top: 19px;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+   margin: auto;
+}
 .video{
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../img/video-bg.jpg);
     background-size: cover;
