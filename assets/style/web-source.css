@@ -1,0 +1,28 @@
+body{
+    margin: 60px;
+}
+
+.navbar{
+   background: rgb(141, 131, 131);
+    height: 60px;
+    width: 100%;
+    color: white;
+}.menu{
+    display: flex;
+}
+.title{
+    width: 30%;
+}
+.menulist{
+    width: 70%;
+    list-style: none;
+    display: flex;
+    /* float: left; */
+    justify-content: right;
+    margin: auto;
+    font-size: 22px;
+    font-weight: 900;
+}
+.list_item{
+    padding: 0px 20px;
+}
