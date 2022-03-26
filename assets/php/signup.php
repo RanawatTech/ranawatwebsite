@@ -1,30 +1,30 @@
 <?php
-session_start();
-
 include('database.php');
 $msg = "";
-if(isset($_POST['Login'])){
-    $query= "select * from user where Email = '$_POST[Email]'";
-    $query_run = mysqli_query($connection,$query);
-    while($row = mysqli_fetch_assoc( $query_run)){
-        if ($row['Email']==$_POST['Email']) {
-            if ($row['Password']==$_POST['Password']){
-                $_SESSION['FirstName'] = $row['FirstName'];
-				$_SESSION['Email'] = $row['Email'];
-                header("location: ../user/user_dashbord.php");
-            }
-            if(($row['Password']!=$_POST['Password'])){
-                $msg = "Please enter correct login detail";
-            }
-               
-            }
-            
-            
+if (isset($_POST['Register'])) {
+    $FirstName = $_POST['FirstName'];
+    $LastName = $_POST['LastName'];
+    $Email = $_POST['Email'];
+    $Password = $_POST['Password'];
+    $Mobile = $_POST['Mobile'];
+    // $query = "select * from user where Email='$Email'";
+    $check = mysqli_num_rows(mysqli_query($connection,"select * from user where Email='$Email'"));
+    if ($check > 0) {
+        $msg = "This email id is already exist";
     }
+    else{
 
+
+    $query = "insert into user(FirstName,LastName,Email,Password,Mobile,Status)values('$FirstName','$LastName','$Email','$Password','$Mobile',0)";
+    // $query = "insert into user value(null, '$_POST[FirstName]','$_POST[LastName]',
+    //         '$_POST[Email]','$_POST[Password]',$_POST[Mobile]),$_Status=0";
+    $query_run = mysqli_query($connection,$query);
+    $msg = "we've just send you a verification email on your email id <strong>$Email</strong><br>
+    plz check your inbox  and confirm your email. ";
+        }
 }
-?>
 
+?>
 
 
 <!DOCTYPE html>
@@ -43,6 +43,15 @@ if(isset($_POST['Login'])){
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="js/index.js"></script>
+    <style>
+        .container{
+            margin: 80px 0px;
+            text-align: center;
+            animation: ZoomOut;
+            animation-duration: 4s;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -74,37 +83,55 @@ if(isset($_POST['Login'])){
         <section class="container">
             <div class="row">
 
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
-                    <h1 style="color:white">Login</h1>
-                    <a href="signup.php">need an account <strong>Sign up</strong></a>
-                    <br>
-                    <br>
-                    <form method="post" action="">
+                <div class="col-md-4"></div>
 
+                <div class="col-md-6">
+                    <h1 style="color:white">Register</h1>
+                    <a href="signIn.php">Have a account <strong>Sign In</strong></a>
+                    <br>
+                    <br>
+                    <form action="" method="post">
+                        <div class="row mb-3">
+                            <label for="inputEmail3" style="color:white" class="col-sm-2 col-form-label">Name</label>
+                            <div class="col-sm-5">
+                                <input type="text" name="FirstName" class="form-control" placeholder="First name" aria-label="First name" required>
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="text" name="LastName" class="form-control" placeholder="Last name" aria-label="Last name" required>
+                            </div>
+                        </div>
                         <div class="row mb-3">
                             <label for="inputEmail3" style="color:white" class="col-sm-2 col-form-label">Email</label>
                             <div class="col-sm-10">
-                                <input type="email" name="Email" class="form-control" placeholder="email123@gmail.com" id="inputEmail3">
+                                <input type="email" name="Email" class="form-control" placeholder="email123@gmail.com" id="inputEmail3" required>
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="inputPassword3" style="color:white" class="col-sm-2 col-form-label">Password</label>
                             <div class="col-sm-10">
-                                <input type="password" name="Password" class="form-control" id="inputPassword">
+                                <input type="password" name="Password" class="form-control" id="inputPassword" required>
                             </div>
                         </div>
+                        <div class="row mb-3">
+                            <label for="phonenumber" style="color:white" class="col-sm-2 col-form-label">Phone Number</label>
+                            <div class="col-sm-10">
+                                <input type="number" name="Mobile" class="form-control" id="inputNumber" required>
+                            </div>
+                        </div>
+                       
 
-
-
-                                <button type="submit" name="Login" class="btn btn-primary">Login</button>
-                               
-                               <br><br><?php 
+                        
+                        
+                        <button type="submit" name="Register" class="btn btn-primary">Register</button>
+                    
+                    <br>
+                    <br>
+                    
+                    <?php 
                    
-                    echo "<font color='red'>$msg</font>";
+                    echo "<font color='blue'>$msg.</font>";
                     ?>
-
-
+                   
                     </form>
                 </div>
                 <div class="col-md-3"></div>
